@@ -10,7 +10,7 @@ export const Profile = ({user: {username, tag, location, avatar, stats}}) => {
       alt={username}
       className={s["avatar"]}
     />
-    <p className={s["text-name"]}>{username}</p>
+    <p className={s["title"]}>{username}</p>
     <p className={s["text"]}>@{tag}</p>
     <p className={s["text"]}>{location}</p>
   </div>

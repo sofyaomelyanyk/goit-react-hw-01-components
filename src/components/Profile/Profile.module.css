@@ -15,14 +15,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  gap: 10px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 3px solid rgba(0, 0, 0, 0.1);
 }
@@ -30,6 +30,11 @@
 .text-name {
   font-size: 25px;
   font-weight: 600;
+}
+
+.title {
+  composes: text-name;
+  padding-top: 30px;
 }
 
 .text {
@@ -42,6 +47,7 @@
   display: flex;
   justify-content: space-evenly;
   border: 2px solid rgba(0, 0, 0, 0.1);
+  background: #f2f2f2;
 }
 
 .item {

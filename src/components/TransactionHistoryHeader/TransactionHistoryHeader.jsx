@@ -1,12 +1,15 @@
 import propTypes from "prop-types";
+import s from './TransactionHistoryHeader.module.css'
 
 export const TransactionHistoryHeader = ({ type, amount, currency}) => {
-   return(
-    <tr>
-      <th>{type}</th>
-      <th>{amount}</th>
-      <th>{currency}</th>
+   return(<thead className={s['wrap']}>
+      <tr className={s['item-list']}>
+      <th className={s['item']}>{type}</th>
+      <th className={s['item']}>{amount}</th>
+      <th className={s['item']}>{currency}</th>
     </tr>
+   </thead>
+    
   )
 }
 

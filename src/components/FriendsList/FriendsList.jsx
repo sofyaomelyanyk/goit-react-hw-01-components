@@ -1,10 +1,11 @@
 import propTypes from "prop-types";
+import s from './FriendsList.module.css'
 
 
 export const FriendsList = ({ children }) => {
    return (
       <>
-        <ul>{children}</ul> 
+        <ul className={s['item-list']}>{children}</ul> 
       </>
       
    )    

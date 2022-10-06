@@ -1,0 +1,23 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: #ffffff;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
+}
+
+.title {
+  padding: 25px;
+}
+
+.item-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}

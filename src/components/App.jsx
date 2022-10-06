@@ -19,7 +19,7 @@ export const App = () => {
   return (
     <>
       <Profile user = {userInfo} />
-      <Section title="Upload stats">
+      <Section title="UPLOAD STATS">
         {data.map(elem => <Statistics 
             key={elem.id}
             label={elem.label}
@@ -37,14 +37,13 @@ export const App = () => {
 		</FriendsList>
 
       <TransactionHistory>
-      <thead><TransactionHistoryHeader type={"Type"} amount={"Amount"} currency={"Currency"} /></thead>
-         <tbody>
+      <TransactionHistoryHeader type={"Type"} amount={"Amount"} currency={"Currency"} />
+         
          {transactionTable.map(elem => <TransactionHistoryBody
          key={elem.id}
          type={elem.type}
          amount={elem.amount}
          currency={elem.currency} />)}
-         </tbody>
          
       </TransactionHistory>
       

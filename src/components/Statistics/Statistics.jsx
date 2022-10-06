@@ -1,18 +1,15 @@
 import propTypes from "prop-types";
+import {getBgColor} from "../utils/bgColor.js"
+import s from './Statistics.module.css'
 
 export const Statistics = ({id, label, percentage}) => {
    return(
-   
-  
-  <li key={id} className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+  <li style={{
+   backgroundColor: getBgColor(),
+  }} key={id} className={s['item']}>
+      <span className={s['label']}>{label}</span>
+      <span className={s['percentage']}>{percentage}%</span>
     </li>
-  
-    
-   
- 
-
    )
  
 }
